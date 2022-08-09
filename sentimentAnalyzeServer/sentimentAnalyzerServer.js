@@ -1,4 +1,5 @@
 const express = require('express');
+const dotenv = require('dotenv');
 const app = new express();
 
 /*This tells the server to use the client 
@@ -12,7 +13,7 @@ app.use(cors_app());
 /*Uncomment the following lines to loan the environment 
 variables that you set up in the .env file*/
 
-const dotenv = require('dotenv');
+
 dotenv.config();
 
 const api_key = process.env.API_KEY;
